@@ -30,7 +30,7 @@
           class="form-control"
           formControlName="cardInfo"
         />
-        <span class="help-block" *ngIf="bettingForm.get('cardInfo').errors">
+        <span class="help-block" *ngIf="bettingForm.get('cardInfo').errors" id="card_validate">
           <span
             *ngIf="
               bettingForm.get('cardInfo').errors.required &&
@@ -50,7 +50,7 @@
           class="form-control"
           formControlName="homeScore"
         />
-        <span class="help-block" *ngIf="bettingForm.get('homeScore').errors">
+        <span class="help-block" *ngIf="bettingForm.get('homeScore').errors" id="hScore_validate">
           <span
             *ngIf="
               bettingForm.get('homeScore').errors.required &&
@@ -70,7 +70,7 @@
           class="form-control"
           formControlName="awayScore"
         />
-        <span class="help-block" *ngIf="bettingForm.get('homeScore').errors">
+        <span class="help-block" *ngIf="bettingForm.get('homeScore').errors" id="aScore_validate">
           <span
             *ngIf="
               bettingForm.get('awayScore').errors.required &&
@@ -90,7 +90,7 @@
           class="form-control"
           formControlName="amount"
         />
-        <span class="help-block" *ngIf="bettingForm.get('amount').errors">
+        <span class="help-block" *ngIf="bettingForm.get('amount').errors" id="amt_validate">
           <span
             *ngIf="
               bettingForm.get('amount').errors.required &&

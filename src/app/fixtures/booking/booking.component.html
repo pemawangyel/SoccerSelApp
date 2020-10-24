@@ -29,7 +29,7 @@
           class="form-control"
           formControlName="email"
         />
-        <span class="help-block" *ngIf="bookingForm.get('email').errors">
+        <span class="help-block" *ngIf="bookingForm.get('email').errors" id="emailValidate">
           <span
             *ngIf="
               bookingForm.get('email').errors.required &&
@@ -49,7 +49,7 @@
           class="form-control"
           formControlName="cardInfo"
         />
-        <span class="help-block" *ngIf="bookingForm.get('cardInfo').errors">
+        <span class="help-block" *ngIf="bookingForm.get('cardInfo').errors" id="validateCard">
           <span
             *ngIf="
               bookingForm.get('cardInfo').errors.required &&

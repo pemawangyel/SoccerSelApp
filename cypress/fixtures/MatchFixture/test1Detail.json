@@ -1,0 +1,108 @@
+{
+    "officials": {
+      "referee": "test",
+      "linesman1": "test",
+      "linesman2": "test"
+    },
+    "home": "Test1",
+    "away": "Testtest1",
+    "stadium": "Changlimithang",
+    "time": "02:30",
+    "date": "2020-02-31",
+    "price": 300,
+    "homeManager": "test",
+    "awayManager": "test",
+    "homePlayers": [
+      {
+        "name": "test",
+        "number": 1
+      },
+      {
+        "name": "test",
+        "number": 2
+      },
+      {
+        "name": "test",
+        "number": 3
+      },
+      {
+        "name": "test",
+        "number": 4
+      },
+      {
+        "name": "test",
+        "number": 5
+      },
+      {
+        "name": "test",
+        "number": 6
+      },
+      {
+        "name": "test",
+        "number": 7
+      },
+      {
+        "name": "test",
+        "number": 8
+      },
+      {
+        "name": "test",
+        "number": 9
+      },
+      {
+        "name": "test",
+        "number": 10
+      },
+      {
+        "name": "test",
+        "number": 11
+      }
+    ],
+    "awayPlayers": [
+      {
+        "name": "test",
+        "number": 1
+      },
+      {
+        "name": "test",
+        "number": 2
+      },
+      {
+        "name": "test",
+        "number": 3
+      },
+      {
+        "name": "test",
+        "number": 4
+      },
+      {
+        "name": "test",
+        "number": 5
+      },
+      {
+        "name": "test",
+        "number": 6
+      },
+      {
+        "name": "test",
+        "number": 7
+      },
+      {
+        "name": "test",
+        "number": 8
+      },
+      {
+        "name": "test",
+        "number": 9
+      },
+      {
+        "name": "test",
+        "number": 10
+      },
+      {
+        "name": "test",
+        "number": 11
+      }
+    ],
+    "id": 1
+  }
