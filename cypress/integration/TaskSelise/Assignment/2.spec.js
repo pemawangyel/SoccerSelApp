@@ -12,7 +12,8 @@ describe('Validations', () => {
 
     //VALIDATION ON BOOKING TICKETS
     it('Validation on booking tickets WITHOUT PASSING any input values', () => {
-        cy.get('div li a').contains('Booking').should('be.visible').click()//path: src > app > navbar > navbar.component.html
+        cy.get('div li a').contains('Booking').should('be.visible').as('booking')//used as command as an alieses an used the aliaes in the next line of code.
+        cy.get('@booking').click()//path: src > app > navbar > navbar.component.html
         cy.url().should('contain', '/fixtures/booking')//path: src > app > fixtures > booking > booking.component.html
         cy.get('.btn').contains('Book the ticket').click()//Message retured: invalid form
         cy.get('div .alert').contains('invalid Form').should('be.visible')//Assertng the validation message
@@ -21,7 +22,7 @@ describe('Validations', () => {
     it(`Validation on booking tickets by CLICKING ON INPUT FIELDS BUT 
         WITHOUT PASSING ANY VALUES`, () => {
         cy.get('div li a').contains('Booking').should('be.visible').click()
-        cy.get('#sel1').select('3')
+        cy.get('#sel1').select('5')
         cy.get('#email').click()//Message returned: Email is required
         cy.get('#cardInfo').click()//Message returned: Card Info is required
         cy.get('.btn').contains('Book the ticket').click()
@@ -60,5 +61,4 @@ describe('Validations', () => {
         cy.get('#aScore_validate').contains('Away Score is required').should('be.visible')//Assertng the validation message
         cy.get('#amt_validate').contains(' Amount is required').should('be.visible')//Asserting the validation message
     })
-
 })
