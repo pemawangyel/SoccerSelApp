@@ -1,4 +1,5 @@
 //stub match fixtures in the home page and feed it with your own data from fixture
+
  describe('Stub', ()=>{
      it('Enter data from fixtures', ()=>{
          cy.server()

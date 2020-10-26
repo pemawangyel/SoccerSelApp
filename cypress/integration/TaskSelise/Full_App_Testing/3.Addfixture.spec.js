@@ -37,7 +37,7 @@ describe('AddFixture Test Suite', () => {
         cy.get('input[placeholder="Home Manager"]').click()
         cy.pause()
     })
-    it(`Test Add Players and check if the required text boxes are displayed.`, () => {
+    it.only(`Test Add Players and check if the required text boxes are displayed.`, () => {
         cy.get('div ul li a').contains('Add Fixture').click()
         cy.get('.btn').contains(' + player ').click()//Two textbox appeared both for Home Player and Away Player 
         cy.pause()

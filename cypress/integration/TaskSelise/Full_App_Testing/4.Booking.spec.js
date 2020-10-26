@@ -56,7 +56,7 @@ describe('Booking Test Suite', () => {
         cy.get('#sel1').select('3')
         cy.get('#email').type('12345')
         cy.get('#cardInfo').type('123')
-        //cy.get('.btn').contains('Book the ticket').should('be.visible').click()
+        cy.get('.btn').contains('Book the ticket').should('be.visible').click()
         cy.pause()
     })
     it(`Test Reset Button for booking`, () => {

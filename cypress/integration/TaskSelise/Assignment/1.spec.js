@@ -9,8 +9,7 @@ describe('Add Fixxture', () => {
         cy.get('form input[placeholder="Email"]').type('admin@admin.com')
         cy.get('form input[placeholder="Password"]').type('123456')
         cy.get('form .btn').contains('login').click()
-        cy.url().should('contain', 'fixtures')
-        cy.url().should('include', 'fixture')
+        cy.url().should('contain', 'fixtures/fixture')//Asserting the home page
         cy.get('div ul li a').contains('Add Fixture').click()//path: src > app > navbar > navbar.component.html
         cy.url().should('contain', 'addFixture')//path: src > app > fixtures > fixture-add > fixture-add.component.html
         cy.get('#referee').type('Pema Wangyel')
@@ -102,8 +101,6 @@ describe('Add Fixxture', () => {
         cy.get('input[placeholder="No."][id="player"]').last().type('3')
         cy.get('input[placeholder="player name"][id="awayPlayers"]').last().type('test3')
         cy.get('input[placeholder="No."][id="awayPlayers"]').last().type('3')
-        cy.pause()
-
         cy.get('.btn').contains('Submit').click()//finally this will enabled and the fixture will be added successfully
     })
 })
